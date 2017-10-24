@@ -1,0 +1,20 @@
+
+table{
+    margin: auto;
+    display: block;
+    width:00px;
+}
+
+@media (max-width:767px){
+table, table tbody, table tr, table td{
+  display: block;
+  width: 100%;
+}
+td:before {
+content: attr(data-label) ": ";
+font-weight: bold;
+}
+table tr:first-child {
+  display: none;
+}
+}
